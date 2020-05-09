@@ -221,7 +221,8 @@
 <p class="font-weight-light text-uppercase sub-title text-black text-center mb-3">Please fill in the required fields</p>
 </div>
 </div>
-                        <form method="post" action="https://hamptonsboatrental.com/send-email" name="general_form" class="narrow-form">
+                        <form method="post" action="{{ url('/send-email')}}" name="general_form" class="narrow-form" id="csrf">
+                            @csrf
         @foreach (['error', 'warning', 'success', 'info'] as $msg)
                               @if(Session::has('alert-' . $msg))
                               <div class="flash-message">
@@ -231,7 +232,7 @@
                               </div> 
                               @endif
                             @endforeach
-        <input type="hidden" name="_token" value="fiL8TRXglVgJZeW3Hv0GyDsb0I0INLGNRlHypUgt">
+     
         <div class="p-5 bg-gray fmr" id="builder">
             <div ref="component" class="formio-component formio-component-form  formio-component-label-hidden" id="e8xdf18">
                 <div novalidate="" ref="webform" class="formio-form">

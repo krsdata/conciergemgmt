@@ -562,11 +562,11 @@ a:hover .boat-no {
                     <div class="col-md-12 col-lg-12 mb-2 mb-lg-2">
                         <div class="row">
 <div class="col-md-12">
-<h2 class="font-weight-bold text-uppercase text-center contact-title aos-init aos-animate" data-aos="flip-up" data-aos-delay="300">Let’s Escape For The Day!</h2>
+<h2 class="font-weight-bold text-uppercase text-center contact-title aos-init aos-animate" data-aos="flip-up" data-aos-delay="300">Let’s Escape For The Day! </h2>
 <p class="font-weight-light text-uppercase sub-title text-black text-center mb-3">Please fill in the required fields</p>
 </div>
 </div>
-                        <form method="post" action="https://hamptonsboatrental.com/send-email" name="general_form">
+                        <form method="post" action="{{ url('/send-email')}}" name="general_form" id="csrf">
         @foreach (['error', 'warning', 'success', 'info'] as $msg)
                               @if(Session::has('alert-' . $msg))
                               <div class="flash-message">
@@ -576,7 +576,7 @@ a:hover .boat-no {
                               </div> 
                               @endif
                             @endforeach
-        <input type="hidden" name="_token" value="fiL8TRXglVgJZeW3Hv0GyDsb0I0INLGNRlHypUgt">
+        @csrf
         <div class="p-5 bg-gray fmr" id="builder">
             <div ref="component" class="formio-component formio-component-form  formio-component-label-hidden" id="e8xdf18">
                 <div novalidate="" ref="webform" class="formio-form">

@@ -23,7 +23,7 @@
             <p class="font-weight-light text-uppercase sub-title text-black text-center mb-3">Please fill in the required fields</p>
         </div>
     </div>
-    <form method="post" action="http://conciergemgmt.yachthampton.com/send-email" name="general_form">
+    <form method="post" action="{{ url('/send-email')}}" name="general_form">
         @foreach (['error', 'warning', 'success', 'info'] as $msg)
                               @if(Session::has('alert-' . $msg))
                               <div class="flash-message">
@@ -33,7 +33,7 @@
                               </div> 
                               @endif
                             @endforeach
-        <input type="hidden" name="_token" value="fiL8TRXglVgJZeW3Hv0GyDsb0I0INLGNRlHypUgt">
+         @csrf
         <div class="p-5 bg-gray fmr" id="builder">
             <div ref="component" class="formio-component formio-component-form  formio-component-label-hidden" id="e8xdf18">
                 <div novalidate="" ref="webform" class="formio-form">
@@ -457,7 +457,7 @@
                 <div class="col-md-9">
                     <div class="col-md-12 col-lg-12 mb-2 mb-lg-2">
                         <h2 class="font-weight-light text-black text-center mb-3 contact-title" data-aos="flip-up" data-aos-delay="300"></h2>
-                        <form method="post" action="http://conciergemgmt.yachthampton.com/send-email" name="general_form">
+                        <form method="post" action="{{ url('/send-email')}}" name="general_form">
         @foreach (['error', 'warning', 'success', 'info'] as $msg)
                               @if(Session::has('alert-' . $msg))
                               <div class="flash-message">
@@ -467,7 +467,7 @@
                               </div> 
                               @endif
                             @endforeach
-        <input type="hidden" name="_token" value="fiL8TRXglVgJZeW3Hv0GyDsb0I0INLGNRlHypUgt">
+        @csrf
         <div class="p-5 bg-gray fmr" id="builder">
             <div ref="component" class="formio-component formio-component-form  formio-component-label-hidden" id="e8xdf18">
                 <div novalidate="" ref="webform" class="formio-form">
