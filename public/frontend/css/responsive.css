@@ -1,0 +1,84 @@
+@media (min-width: 1200px) 
+{
+
+}
+/*-----------------------------------------------------------------------------*/
+@media (min-width: 992px) and (max-width: 1199px) 
+{
+	.cms-main-footer .widget{text-align:left;}
+	.cms-main-footer .media-body p, .cms-main-footer .media-body a {word-break: break-all;}
+
+}
+/*-----------------------------------------------------------------------------*/
+@media (min-width: 768px) and (max-width: 991px) 
+{
+	.cms-main-footer .widget{text-align:left;}
+	.box-left1{height:auto;}
+	.widget {text-align:center;}
+	.cruising-area{height:200px;width:100%;}
+}
+/*-----------------------------------------------------------------------------*/
+@media (max-width: 767px) 
+{
+.page-title .block h1{font-family:'Montserrat';margin:15px 0!important;font-size:40px;letter-spacing:5px;line-height:53px;}
+.page-title .block h2{font-family:Tenor Sans, sans-serif;margin:15px 0!important;font-size:40px;letter-spacing:5px;line-height:53px;}
+.about .about-content p.mt-3:last-child{text-align:center;font-family:'Arizonia';color:#26a9e0;font-size:24px;line-height:35px;font-weight:600;letter-spacing:3px;}
+.cms-main-footer .widget{text-align:left;}
+.box-left1{height:auto;padding: 1.5rem 1.5rem;}
+.toysBoxRight {padding: 10px;}
+.key-toys{font-size:12px; line-height:25px;}
+.destinations{margin-top:20px;margin-right:15px;}
+.page-title{padding:50px 0px;}
+.footer-header {text-align:center;}
+.widget {align-items:center;}
+.lh-35 {text-align:center;}
+.lh-36{text-align:center;}
+.header-top-socials{padding:1px 0px 0px 0px !important;}
+.boats_price_box_item {font-size: 18px;}
+.explore{margin-top:10px;}
+.testimonial-space{margin-bottom:-50px;}
+.button-space{margin-bottom:25px}
+.sea_bob img{max-width: 75px;}
+.jet_ski img{max-width: 75px;}
+.image10 img {max-width: 75px;}
+.jet_ski {right:16%;}
+.sea_bob{left:52%;}
+.paddle-board{left:35%;}
+.paddle-board img{max-width: 75px;}
+.cursive{font-size:1.5rem;}
+.button-top{margin-top:20px;}
+.row img.cruising-area{height:300px;width:100%;padding: 0px 5px 0px 5px;}
+.pricing-width{width:250px;margin-left:75px;}
+.top-header-space{margin-left:0px;}
+.navbar-brand img {width: 150px;height: 60px;}
+.bachelorette-cursive{font-size:50px;line-height:80px;}
+.pricingTable2{margin-top:35px;}
+.rows{margin-left: -13px;margin-right: -13px;}
+.char-des-int_cont_sec2 .inn_boxes_cont_sec_lt {padding-left: 5px;padding-right:5px;padding-top: 50px;}
+.inn_boxes_cont_sec_lt {padding-left: 5px;padding-top: 0px;padding-right:5px;padding-bottom:20px;}
+.char-des-int_cont_sec{padding-top:50px;}
+.btn-footer{margin-bottom:20px;}
+.cms-main-footer .footerlogo {width: 75%;height: auto;display: block;margin: 0 0 10px;}
+.cms-main-footer ul.social-list-cms {text-align: center;}
+#navbar{ height:61px;}
+section.cms-paymentbox .paymentlogobox .yhc-logo{width:90%;height:150px;}
+.contact-logo img{width:350px;height:150px;}
+}
+
+/*-----------------------------------------------------------------------------*/
+@media (max-width: 767px) and (orientation : landscape)
+{
+.header-top-socials{padding:2px 0px 0px 0px !important;}
+.explore{margin-top:10px;}
+.cruising-area{height:200px;width:100%;}
+}
+/*-----------------------------------------------------------------------------*/
+@media (max-width:320px) 
+{   
+.widget {text-align:center;}
+.header-top-socials{padding:2px 0px 0px 0px !important;}
+.explore{margin-top:10px;}
+.button-space{margin-bottom:25px}
+.cruising-area{height:200px;width:100%;}
+.sea_bob{left:46%;}
+}

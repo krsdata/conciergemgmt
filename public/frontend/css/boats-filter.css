@@ -1,0 +1,615 @@
+.boat-filter-section{
+  background: #fff;
+  border: 1px solid rgb(235, 235, 235);
+  height: 50px;
+  line-height: 35px;
+  padding: 6px;
+  border-left: 0;
+  border-right: 0;
+}
+
+.filterBtns span{
+  font-weight: 600;
+}
+
+.boat-filter-section .filterOpt{
+  cursor: pointer !important;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(34, 34, 34) ;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 14px;
+    line-height: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-image: initial;
+    outline: none;
+    margin-right: 10px;
+    border-color: rgb(176, 176, 176);
+    border-radius: 30px;
+}
+.boat-filter-section .filterOpt:hover{
+  background: #15b8f3;
+  border-color:#15b8f3;
+  color: #fff;
+}
+.filterOpt.activate{
+  background: #15b8f3;
+  border-color:#15b8f3;
+  color: #fff;
+}
+
+.optionWindow{
+  z-index: 99999;
+}
+.optionBox{
+  position: relative;
+    /*display: inline-block;*/
+    left: 0px;
+    top: 10px;
+    z-index: 10 !important;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 37px !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    white-space: normal !important;
+    /*max-height: calc(100vh - 152px) !important;*/
+    visibility: visible !important;
+    background: rgb(255, 255, 255) !important;
+    border-width: 0.5px !important;
+    border-style: solid !important;
+    border-color: rgba(118, 118, 118, 0.28) !important;
+    border-image: initial !important;
+    border-radius: 12px !important;
+    width: 40%;
+}
+.budgetBox{
+    left: 110px;
+    display: none;
+}
+.boatTypesBox{
+    left: 230px;
+    width: 70%;
+    display: none;
+}
+.passengerBox{
+    left: 360px;
+    display: none;
+}
+
+.optionBox .optHeader{
+    padding:20px;
+    height: 250px;
+    overflow: auto;
+    float: left;
+    width: 100%;
+}
+.optionBox.deptPortBox .optHeader{
+    height: auto;
+}
+
+.optionBox .optFooter{
+    padding: 15px;
+    float: left;
+    width: 100%;
+    border-top: 1px solid #eee;
+}
+.optionBox .optFooter .clear{
+    font-size: 16px;
+    color: #000;
+    text-decoration: underline;
+    margin:0;
+    padding:0;
+    float: left;
+    line-height: 30px;
+}
+.optionBox .optFooter .save{
+    float: right;
+    border-radius: 4px;
+    padding: 8px 36px;
+    font-size: 18px;
+    background: #15b8f3;
+    border:none;
+    /*border-color: #15b8f3;*/
+    color: #fff !important;
+    height: 40px;
+    line-height: 26px;
+    font-weight: 400;
+    text-align: center;
+}
+.optionBox .optFooter .save:hover{
+    background-color: #0069d9;
+    /*border-color: #0062cc;*/
+}
+
+.optionBox ul, .modalOptions ul{ 
+    list-style: none;
+    margin: 0;
+    padding:0px;
+}
+.boatTypesBox .optHeader{
+  height: 200px;
+}
+.boatTypesBox .optHeader ul li{
+  width: 50%;
+  float: left;
+}
+.defaultBoatsBtn{
+  background: #15b8f3;
+  border-color: #15b8f3;
+}
+
+.modalHeader{
+    padding:20px;
+    height: 400px;
+    overflow: auto;
+    width: 100%;
+}
+.modalHeader hr{
+    background: #ddd;
+    clear: both;
+}
+.modalOptions{
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+}
+.modalOptions p{
+    /*color: rgb(34, 34, 34);*/
+    color: #222;
+    font-weight: 400;
+    font-size: 20px;
+}
+.modalOptions ul li{
+    width: 50%;
+    float: left;
+    padding: 6px 0;
+}
+.filterModal .clear{
+    font-size: 16px;
+    color: #000;
+    text-decoration: underline;
+    margin:0;
+    padding:0;
+    float: left;
+    line-height: 30px;
+}
+.filterModal .modal-footer .save{
+    float: right;
+    border-radius: 4px;
+    padding: 10px 26px;
+    font-size: 18px;
+    background: #15b8f3; /*rgb(34, 34, 34) !important;*/
+    border: none;
+    /*border-color: #15b8f3;*/
+    color: #fff !important;
+    height: 44px;
+    line-height: 25px;
+    font-weight: 400;
+}
+.filterModal .modal-footer .save:hover{
+    background-color: #0069d9;
+    /*border-color: #0062cc;*/
+}
+
+.filterModal .modal-header{
+    display: block !important;
+}
+.filterModal .modal-header .modal-title{
+  font-weight: 600;
+  color: #15b8f3;
+}
+.filterModal .modal-footer{
+    display: block !important;
+}
+.filterModal .modal-header .modalClose {
+    float: left;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    opacity: 1;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.minBox{
+    height: 60px;
+    border: 1px solid #ddd;
+    cursor: text;
+    border-radius: 10px;
+}
+
+.minBox label{
+    position: absolute;
+    top: -6px;
+    z-index: 9999;
+    left: 22px;
+    cursor: text;
+    font-size: 12px;
+}
+.modalOptions .minBox label{
+  top: 5px;
+  left: 30px;
+}
+.minBox span{
+    position: absolute;
+    left: 23px;
+    z-index: 99999;
+    top: 22px;
+    cursor: text;
+    font-size: 13px;
+}
+.minBox input{
+    top: 18px;
+    position: relative;
+    height: 41px;
+    font-size: 18px;
+    left: 10px;
+    width: 90%;
+    outline: none;
+    border: none !important;
+    background: transparent !important;
+}
+.buildings{
+  height: 50px;
+  padding: 0 60px;
+  position: relative;
+  bottom: -10px;
+}
+.buildings > div{
+  width: 6px;
+  background: #ccc;
+  float: left;
+  margin: 0px 2px;
+  position: relative;
+}
+.buildings .line1 {
+  height: 6px;
+  bottom: -44px;
+}
+.buildings .line2 {
+  height: 11px;
+  bottom: -40px;
+}
+.buildings .line3{
+  height: 8px;
+  bottom: -42px;
+}
+.buildings .line4{
+  height: 20px;
+  bottom: -30px;
+}
+.buildings .line5{
+  height: 30px;
+  bottom: -20px;
+}
+.buildings .line6{
+  height: 40px;
+  bottom: -10px;
+}
+.buildings .line7{
+  height: 28px;
+  bottom: -22px;
+}
+.buildings .line8{
+  height: 57px;
+  bottom: 6px;
+}
+.buildings .line9{
+  height: 66px;
+  bottom: 15px;
+}
+.buildings .line10{
+  height: 40px;
+  bottom: -12px;
+}
+.buildings .line11{
+  height: 57px;
+  bottom: 6px;
+}
+.buildings .line12{
+  height: 32px;
+  bottom: -18px;
+}
+.buildings .line13{
+  height: 30px;
+  bottom: -20px;
+}
+.buildings .line14{
+  height: 40px;
+  bottom: -10px;
+}
+.buildings .line15{
+  height: 16px;
+  bottom: -34px;
+}
+.buildings .line16{
+  height: 20px;
+  bottom: -30px;
+}
+.buildings .line17{
+  height: 21px;
+  bottom: -31px;
+}
+.buildings .line18{
+  height: 5px;
+  bottom: -45px;
+}
+.buildings .line19{
+  height: 12px;
+  bottom: -38px;
+}
+.buildings .line20{
+  height: 6px;
+  bottom: -44px;
+}
+.buildings .line21{
+  height: 1px;
+  bottom: -49px;
+  
+}
+.buildings .line22{
+  height: 5px;
+  bottom: -45px;
+}
+.buildings .line23{
+  height: 5px;
+  bottom: -45px;
+}
+.buildings .line24{
+  height: 7px;
+  bottom: -43px; 
+}
+.buildings .line25{
+  height: 8px;
+  bottom: -42px;
+}
+.buildings .line26{
+  height: 6px;
+  bottom: -44px; 
+}
+/*.buildings .line27{
+  height: 4px;
+  bottom: -46px;
+}
+.buildings .line28{
+  height: 1px;
+  bottom: -49px;
+}
+.buildings .line29{
+  height: 4px;
+  bottom: -46px;
+}*/
+.singleSliderBox{
+  text-align: center;
+}
+.singleSlider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 2px;
+  background: #c5c5c5;
+  outline: none;
+  opacity: 1;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.singleSlider:hover {
+  opacity: 1;
+}
+
+.singleSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  border-radius:150px;
+  background: #fff;
+  border: 1.5px solid #ccc;
+}
+
+.singleSlider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  background: #fff;
+  border: 1.5px solid #ccc
+}
+
+
+
+/*=== Checkbox CSS STart ===*/
+.module-options {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.module-options input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  height: 23px;
+  width: 23px;
+  border-radius: 4px;
+  border:1px solid rgb(176, 176, 176);
+}
+.modalOptions .checkmark {
+    top:0;
+}
+
+/* On mouse-over, add a grey background color */
+.module-options:hover input ~ .checkmark {
+  /*background-color: #ccc;*/
+  border-color: #15b8f3;
+}
+
+/* When the checkbox is checked, add a blue background */
+.module-options input:checked ~ .checkmark {
+  background-color: #15b8f3;
+  border-color:#15b8f3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.module-options input:checked ~ .checkmark:after {
+  display: block;
+}
+ 
+/* Style the checkmark/indicator */
+.module-options .checkmark:after {
+    left: 6px;
+    top: 1px;
+    width: 8px;
+    height: 15px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/*=== Checkbox CSS End ===*/
+
+.mobileOptions{
+  display:none;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
+  .optionBox{
+    width: 70%;
+  }  
+  .modal-dialog{
+    max-width: 650px;
+  }
+  .budgetBox{
+    left: 0;
+  }
+  .boatTypesBox {
+    left: 20px;
+  }
+  .deptPortBox {
+    left: 150px;
+  }
+  .module-options{
+    font-size: 14px;
+  }
+  .passengerBox{
+    left: 180px;
+  }
+}
+
+@media (max-width: 480px) { 
+    .boat-filter-section .filterBtns{
+      padding: 0 0 0 4px;
+    }
+    .filterBtns span{
+      display: block;
+    }
+    .boat-filter-section{
+      height: auto;
+      padding-bottom: 15px;
+    }
+
+    .desktopOptions{
+      display: none;
+    }
+    .mobileOptions{
+      display: block !important;
+    }
+   .boat-filter-section .filterOpt{
+      padding-left: 9px !important;
+      padding-right: 9px !important;
+      font-size: 12px !important;
+      margin-right: 0px;
+   }
+   .boat-filter-section .mobileFilter{
+    display: inline-block !important;
+   }
+   
+   .buildings {
+      padding: 0 45px;
+    }
+   .buildings > div {
+      width: 2px;
+      margin: 0px 2px;
+    }
+    .modalOptions .col-md-6{
+      width: 50%;
+      float: left;
+      margin: auto;
+    }
+    .minBox span{
+      top: 30px;
+    }
+    .modalOptions .minBox label{
+      left: 22px;
+    }
+    .passengerItems{
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 30px;
+    }
+    .modalOptions ul li{
+      width: 100%;
+    }
+    .filterModal .modal-footer .clear{
+      display: none;
+    }
+    .filterModal .modal-header .modal-title{
+      
+    }
+    .filterModal .modal-header .clear{
+      float: right;
+      position: absolute;
+      top: 15px;
+      right: 10px;
+    }
+    .filterModal .modal-footer .save{
+      width: 100%;
+    }
+    .modalHeader{
+      height: 400px;
+    }
+} 
+
+@media (max-width: 360px) { 
+  .boat-filter-section .filterOpt {
+      padding-left: 6px !important;
+      padding-right: 6px !important;
+      font-size: 12px !important;
+      margin-right: 0px;
+  }
+}
