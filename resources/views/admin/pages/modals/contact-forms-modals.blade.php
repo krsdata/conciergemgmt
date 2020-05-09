@@ -1,0 +1,22 @@
+<!-- Delete Modal-->
+<div class="modal fade" id="delete-form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Delete for sure?</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">Select "Delete" below if you are sure to delete the selected item.</div>
+            <div class="modal-footer">
+                <form method="POST" action="{{ url('/dashboard/contact-form/delete') }}">
+                    @csrf
+                    <input type="hidden" name="delete_id" id="delete-id" value="">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Delete</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
