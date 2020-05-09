@@ -51,7 +51,7 @@ class Handler extends ExceptionHandler
      * @return \Illuminate\Http\Response
      */
     public function render($request, Exception $exception)
-    {   dd($exception);
+    {  // dd($exception);
         //return parent::render($request, $exception);
         return response()->view('frontend.404',[],404);
         if($this->isHttpException($exception))
